@@ -18,7 +18,7 @@ default_messages = [
 if "messages" not in st.session_state:
     st.session_state.messages = default_messages.copy()
 # Hide the stAppHeader via CSS
-st.title("나만의 AI 챗봇")
+st.title("나만의 NC 챗봇")
 
 
 
@@ -96,6 +96,7 @@ if prompt := st.chat_input("메시지를 입력하세요..."):
     st.session_state.messages.append({"role": "assistant", "content": response})
     with st.chat_message("assistant"):
         st.markdown(response)
+
 
 
 
