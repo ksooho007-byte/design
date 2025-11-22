@@ -2,7 +2,7 @@ import streamlit as st
 
 
 # 기본 system message
-system_message = "너의 이름은 친구봇이야."
+system_message = "너는 NC봇이야."
 
 # 기본 메시지들
 default_messages = [
@@ -96,6 +96,7 @@ if prompt := st.chat_input("메시지를 입력하세요..."):
     st.session_state.messages.append({"role": "assistant", "content": response})
     with st.chat_message("assistant"):
         st.markdown(response)
+
 
 
 
